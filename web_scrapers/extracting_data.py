@@ -27,3 +27,4 @@ for item in rows:
     })
 # data saving
 pd.DataFrame(data).to_csv('box_office_data.csv')
+driver.close()

@@ -3,7 +3,7 @@ import cv2
 
 bgmask = cv2.createBackgroundSubtractorKNN()
 
-cap = cv2.VideoCapture("c:/users/HP 346 G3/Videos/drawing.mkv")
+cap = cv2.VideoCapture(0)
 while True:
     ret, frame = cap.read()
     if ret:

@@ -25,3 +25,8 @@ if file:
         img = imgen.enhance(val_contrast)
         img_area.image(img)
 
+    deg = st.sidebar.slider("rotate image (deg)",0,359)
+    if st.sidebar.button("rotate"):
+        img =  img.rotate(deg)
+        img_area.image(img)
+        img.save(f'tmp/rotate_{file.name}',)
